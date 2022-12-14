@@ -1,0 +1,20 @@
+{% extends "AppCoder/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Distribuidor : {{distribuidor}}
+    <br>
+    Hardware:
+    {%for asd in hardware %}
+        {{asd.nombre}}
+        <br>
+    Precio:
+        {{asd.precio}}
+        <br>
+    {%endfor%}
+
+
+    {% endblock %}

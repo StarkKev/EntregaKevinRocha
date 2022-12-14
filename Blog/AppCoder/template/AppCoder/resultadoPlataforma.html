@@ -1,0 +1,20 @@
+{% extends "AppCoder/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Plataforma : {{nombre}}
+    <br>
+    ano_lanzamiento:
+    {%for asd in plataforma %}
+        {{asd.ano_lanzamiento}}
+        <br>
+    Precio:
+        {{asd.precio}}
+        <br>
+    {%endfor%}
+
+
+    {% endblock %}

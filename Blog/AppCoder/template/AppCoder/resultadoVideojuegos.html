@@ -1,0 +1,20 @@
+{% extends "AppCoder/principal.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Ano Lanzamiento : {{ano_lanzamiento}}
+    <br>
+    Videojuego:
+    {%for asd in videojuegos %}
+        {{asd.nombre}}
+        <br>
+    Genero:
+        {{asd.genero}}
+        <br>
+    {%endfor%}
+
+
+    {% endblock %}
